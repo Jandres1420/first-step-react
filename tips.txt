@@ -1,0 +1,11 @@
+for creating vite 
+npm create vite@latest
+
+for installing dependencies 
+
+npm install
+
+for running the code with vite use npm run dev
+
+
+imr ---> in visual studio code for importing react directly 
