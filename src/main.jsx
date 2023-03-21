@@ -1,14 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { AppWithProperty } from './AppWithProperty'
+import { FirstApp } from './FirstApp'
+import { HelloWorldApp } from './HelloWorldApp'
+import './styles.css'
 
-function App(){
-    //document.createElement
-    return (<h1> Hello world!!</h1>);
-}
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <>
+      <HelloWorldApp />
+      <FirstApp/>
+      <AppWithProperty title="Hola desde main" number = {13} />
+    </>
+  </React.StrictMode>
+);
 
